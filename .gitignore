@@ -1,5 +1,6 @@
 /node_modules/
 /public/build/
 /.vscode/
+/nong-mha-win32-x64
 
 .DS_Store
