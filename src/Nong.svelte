@@ -2,11 +2,14 @@
     let number = ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15'];
     let currentFrame = '01'
     let count = 0;
+    const fps = 60;
     function run() {
         if (count < 15) {
             currentFrame = number[count];
             count++;
-            window.requestAnimationFrame(run);
+            setTimeout(() => {
+                window.requestAnimationFrame(run);
+            }, 1000/fps)
         }
         if (count ==15) {
             count = 0;
